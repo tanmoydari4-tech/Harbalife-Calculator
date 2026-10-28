@@ -1,0 +1,11 @@
+[build]
+  command = "echo 'Using pre-built static bundle'"
+  publish = "."
+
+[build.environment]
+  NPM_FLAGS = "--version"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

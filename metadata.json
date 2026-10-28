@@ -1,0 +1,6 @@
+{
+  "name": "Herbalife Price & VP Calculator",
+  "description": "Interactive Herbalife product price, discount tier (MRP, Retail, 25%, 35%, 42%, 50%), and Volume Point (VP) calculator with instant product search, customer quote management, and printable invoice generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,485 @@
+export interface Product {
+  code: string;
+  name: string;
+  vp: number;
+  mrp: number;
+  retail: number;
+  earnBase: number;
+  p25: number;
+  p35: number;
+  p42: number;
+  p50: number;
+}
+
+export const PRODUCTS: Product[] = [
+
+  {
+    "code": "",
+    "name": "Formula 1 - Nutritional Shake Mix -  500 gms",
+    "vp": 21.75,
+    "mrp": 2179,
+    "retail": 2075,
+    "earnBase": 1776,
+    "p25": 1713,
+    "p35": 1526,
+    "p42": 1396,
+    "p50": 1246
+  },
+  {
+    "code": "",
+    "name": "Formula 1  - 750 gms",
+    "vp": 32.65,
+    "mrp": 3227,
+    "retail": 3073,
+    "earnBase": 2628,
+    "p25": 2537,
+    "p35": 2261,
+    "p42": 2068,
+    "p50": 1847
+  },
+  {
+    "code": "1233",
+    "name": "Personalized Protein Powder - 200 gms",
+    "vp": 11.5,
+    "mrp": 1295,
+    "retail": 1233,
+    "earnBase": 1054,
+    "p25": 1018,
+    "p35": 907,
+    "p42": 830,
+    "p50": 741
+  },
+  {
+    "code": "1569",
+    "name": "Personalized Protein Powder - 400 gms",
+    "vp": 22.5,
+    "mrp": 2485,
+    "retail": 2366,
+    "earnBase": 2023,
+    "p25": 1953,
+    "p35": 1741,
+    "p42": 1592,
+    "p50": 1422
+  },
+  {
+    "code": "183K",
+    "name": "ShakeMate - 500 gms",
+    "vp": 6.45,
+    "mrp": 653,
+    "retail": 621,
+    "earnBase": 306,
+    "p25": 572,
+    "p35": 540,
+    "p42": 517,
+    "p50": 491
+  },
+  {
+    "code": "0064",
+    "name": "Ocular Defense",
+    "vp": 19.25,
+    "mrp": 1927,
+    "retail": 1835,
+    "earnBase": 1570,
+    "p25": 1515,
+    "p35": 1350,
+    "p42": 1234,
+    "p50": 1103
+  },
+  {
+    "code": "175K",
+    "name": "Male Factor +",
+    "vp": 34.75,
+    "mrp": 3410,
+    "retail": 3247,
+    "earnBase": 2776,
+    "p25": 2681,
+    "p35": 2389,
+    "p42": 2185,
+    "p50": 1952
+  },
+  {
+    "code": "127K",
+    "name": "Woman's Choice",
+    "vp": 12.45,
+    "mrp": 1245,
+    "retail": 1185,
+    "earnBase": 1013,
+    "p25": 978,
+    "p35": 872,
+    "p42": 798,
+    "p50": 712
+  },
+  {
+    "code": "109K",
+    "name": "vritilife Brain Health - 60 tablets",
+    "vp": 15.1,
+    "mrp": 1464,
+    "retail": 1394,
+    "earnBase": 1192,
+    "p25": 1151,
+    "p35": 1026,
+    "p42": 938,
+    "p50": 838
+  },
+  {
+    "code": "115K",
+    "name": "vritilife Immune Health - 60 tablets",
+    "vp": 15.8,
+    "mrp": 1528,
+    "retail": 1455,
+    "earnBase": 1245,
+    "p25": 1201,
+    "p35": 1070,
+    "p42": 979,
+    "p50": 874
+  },
+  {
+    "code": "275K",
+    "name": "vritilife® Facial Cleanser (100 ml)",
+    "vp": 10.4,
+    "mrp": 1165,
+    "retail": 987,
+    "earnBase": 844,
+    "p25": 916,
+    "p35": 816,
+    "p42": 746,
+    "p50": 667
+  },
+  {
+    "code": "315K",
+    "name": "vritilife® Facial Toner (100 ml)",
+    "vp": 11.8,
+    "mrp": 1322,
+    "retail": 1120,
+    "earnBase": 958,
+    "p25": 1039,
+    "p35": 926,
+    "p42": 847,
+    "p50": 756
+  },
+  {
+    "code": "276K",
+    "name": "vritilife® Facial Serum (30 ml)",
+    "vp": 27.05,
+    "mrp": 3022,
+    "retail": 2561,
+    "earnBase": 2190,
+    "p25": 2376,
+    "p35": 2118,
+    "p42": 1937,
+    "p50": 1730
+  },
+  {
+    "code": "277K",
+    "name": "vritilife® Moisturizer (100 ml)",
+    "vp": 13.15,
+    "mrp": 1473,
+    "retail": 1248,
+    "earnBase": 1067,
+    "p25": 1158,
+    "p35": 1032,
+    "p42": 944,
+    "p50": 843
+  },
+  {
+    "code": "046K",
+    "name": "HN-Skin Booster - Orange - 10 gms * 30 Sachets",
+    "vp": 38.65,
+    "mrp": 3910,
+    "retail": 3723,
+    "earnBase": 2749,
+    "p25": 3188,
+    "p35": 2899,
+    "p42": 2697,
+    "p50": 2466
+  },
+  {
+    "code": "316K",
+    "name": "HN-Skin Booster - Canister",
+    "vp": 38.65,
+    "mrp": 3910,
+    "retail": 3723,
+    "earnBase": 2849,
+    "p25": 3161,
+    "p35": 2862,
+    "p42": 2653,
+    "p50": 2413
+  },
+
+  {
+    "code": "",
+    "name": "Afresh Energy Drink Mix - Kashmiri Kahwa AND OTHERS- 40 gms",
+    "vp": 7.8,
+    "mrp": 812,
+    "retail": 773,
+    "earnBase": 662,
+    "p25": 638,
+    "p35": 568,
+    "p42": 520,
+    "p50": 464
+  },
+  {
+    "code": "080K",
+    "name": "Afresh Energy Drink Mix - Tulsi (Basil) - 50 gms",
+    "vp": 7.8,
+    "mrp": 812,
+    "retail": 773,
+    "earnBase": 630,
+    "p25": 646,
+    "p35": 580,
+    "p42": 534,
+    "p50": 481
+  },
+  {
+    "code": "507K",
+    "name": "Liftoff Watermelon (30 Sachets)",
+    "vp": 38.05,
+    "mrp": 4119,
+    "retail": 3922,
+    "earnBase": 3354,
+    "p25": 3238,
+    "p35": 2886,
+    "p42": 2639,
+    "p50": 2357
+  },
+  {
+    "code": "505K",
+    "name": "Liftoff Watermelon (10 Sachets)",
+    "vp": 12.95,
+    "mrp": 1401,
+    "retail": 1334,
+    "earnBase": 1140,
+    "p25": 1101,
+    "p35": 982,
+    "p42": 898,
+    "p50": 802
+  },
+  {
+    "code": "1458",
+    "name": "H24 Hydrate - 5gms *20 Sachets",
+    "vp": 14.05,
+    "mrp": 1636,
+    "retail": 1558,
+    "earnBase": 1134,
+    "p25": 1338,
+    "p35": 1219,
+    "p42": 1136,
+    "p50": 1041
+  },
+  {
+    "code": "031K",
+    "name": "H24 Rebuild Strength - 50gms *10 Sachets",
+    "vp": 24.7,
+    "mrp": 2616,
+    "retail": 2491,
+    "earnBase": 2035,
+    "p25": 2081,
+    "p35": 1868,
+    "p42": 1718,
+    "p50": 1547
+  },
+  {
+    "code": "",
+    "name": "Dinoshake™  - 200 gms",
+    "vp": 9.6,
+    "mrp": 1115,
+    "retail": 1061,
+    "earnBase": 908,
+    "p25": 876,
+    "p35": 780,
+    "p42": 714,
+    "p50": 637
+  },
+  {
+    "code": "1278",
+    "name": "Activated Fiber - 90 Tablets",
+    "vp": 15.75,
+    "mrp": 1636,
+    "retail": 1558,
+    "earnBase": 1333,
+    "p25": 1286,
+    "p35": 1146,
+    "p42": 1048,
+    "p50": 936
+  },
+  {
+    "code": "2865",
+    "name": "Active Fibre Complex - Unflavoured - 200 gms",
+    "vp": 22.95,
+    "mrp": 2559,
+    "retail": 2437,
+    "earnBase": 2084,
+    "p25": 2012,
+    "p35": 1793,
+    "p42": 1640,
+    "p50": 1465
+  },
+  {
+    "code": "1293",
+    "name": "Aloe Plus - 60 Capsules",
+    "vp": 9.4,
+    "mrp": 1059,
+    "retail": 1008,
+    "earnBase": 863,
+    "p25": 832,
+    "p35": 741,
+    "p42": 678,
+    "p50": 605
+  },
+  {
+    "code": "0006",
+    "name": "Herbal Aloe Concentrate - Unflavored (Original) - 500 ml",
+    "vp": 24.95,
+    "mrp": 2696,
+    "retail": 2567,
+    "earnBase": 2195,
+    "p25": 2119,
+    "p35": 1889,
+    "p42": 1727,
+    "p50": 1543
+  },
+  {
+    "code": "025K",
+    "name": "Simply Probiotic - 1 gms *30 Sachets",
+    "vp": 21.95,
+    "mrp": 2209,
+    "retail": 2103,
+    "earnBase": 1799,
+    "p25": 1736,
+    "p35": 1547,
+    "p42": 1415,
+    "p50": 1264
+  },
+  {
+    "code": "186K",
+    "name": "vritilife Triphala - 60 Tablets",
+    "vp": 11.25,
+    "mrp": 1089,
+    "retail": 1037,
+    "earnBase": 887,
+    "p25": 856,
+    "p35": 763,
+    "p42": 698,
+    "p50": 623
+  },
+  {
+    "code": "0020",
+    "name": "Herbalife Calcium Tablets - 60 Tablets",
+    "vp": 10.25,
+    "mrp": 1203,
+    "retail": 1145,
+    "earnBase": 979,
+    "p25": 945,
+    "p35": 842,
+    "p42": 771,
+    "p50": 688
+  },
+  {
+    "code": "0555",
+    "name": "Joint Support - 90 Tablets",
+    "vp": 20.9,
+    "mrp": 2455,
+    "retail": 2338,
+    "earnBase": 2000,
+    "p25": 1930,
+    "p35": 1720,
+    "p42": 1573,
+    "p50": 1405
+  },
+  {
+    "code": "2637",
+    "name": "Herbalife Niteworks - 300 gms",
+    "vp": 75.0,
+    "mrp": 7128,
+    "retail": 6788,
+    "earnBase": 5804,
+    "p25": 5604,
+    "p35": 4994,
+    "p42": 4568,
+    "p50": 4060
+  },
+  {
+    "code": "0065",
+    "name": "Herbalifeline - 60 Softgels",
+    "vp": 25.75,
+    "mrp": 2667,
+    "retail": 2540,
+    "earnBase": 2172,
+    "p25": 2097,
+    "p35": 1869,
+    "p42": 1709,
+    "p50": 1527
+  },
+  {
+    "code": "051K",
+    "name": "Beta Heart - Vanilla Flavour - 15 gms *15 Sachets",
+    "vp": 19.55,
+    "mrp": 2242,
+    "retail": 2115,
+    "earnBase": 1576,
+    "p25": 1828,
+    "p35": 1663,
+    "p42": 1547,
+    "p50": 1414
+  },
+  {
+    "code": "1232",
+    "name": "Multivitamin Mineral and Herbal Tablets Plus - 90 Tablets",
+    "vp": 19.95,
+    "mrp": 2004,
+    "retail": 1908,
+    "earnBase": 1632,
+    "p25": 1575,
+    "p35": 1404,
+    "p42": 1284,
+    "p50": 1147
+  },
+  {
+    "code": "3123",
+    "name": "Cell Activator - New - 60 Tablets",
+    "vp": 21.95,
+    "mrp": 2215,
+    "retail": 2109,
+    "earnBase": 1629,
+    "p25": 1804,
+    "p35": 1741,
+    "p42": 1555,
+    "p50": 1419
+  },
+  {
+    "code": "0111",
+    "name": "Cell-U-Loss Advanced - 90 Tablets",
+    "vp": 15.75,
+    "mrp": 1705,
+    "retail": 1623,
+    "earnBase": 1388,
+    "p25": 1340,
+    "p35": 1194,
+    "p42": 1092,
+    "p50": 975
+  },
+  {
+    "code": "0077",
+    "name": "Herbal Control - 90 Tablets",
+    "vp": 32.95,
+    "mrp": 3433,
+    "retail": 3269,
+    "earnBase": 2796,
+    "p25": 2699,
+    "p35": 2405,
+    "p42": 2199,
+    "p50": 1965
+  },
+  {
+    "code": "426K",
+    "name": "Sleep Enhance",
+    "vp": 16.3,
+    "mrp": 1697,
+    "retail": 1616,
+    "earnBase": 1387,
+    "p25": 1334,
+    "p35": 1189,
+    "p42": 1087,
+    "p50": 971
+  }
+];
